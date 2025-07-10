@@ -40,6 +40,17 @@ int main() {
 
 	mover(ptr_personaje);
 
+	ptr_personaje->posicion.m_posicion_x = 10;
+
+	ptr_personaje->posicion.m_posicion_y = 11;
+
+	mover(ptr_personaje);
+
+	ptr_personaje->posicion.m_posicion_x = 22;
 	
+	ptr_personaje->posicion.m_posicion_y = 45;
+
+	mover(ptr_personaje);
+
 	return 0;
 }
