@@ -24,7 +24,22 @@ struct Personaje
 
 };
 
+void mover(Personaje* personaje)
+{
+	Personaje* p1 =	personaje;
+
+	std::cout << "Personaje ahora en la posicion X " << p1->posicion.m_posicion_x << " Y " << p1->posicion.m_posicion_y << std::endl;
+
+}
+
 int main() {
-	std::cout << "Hello, World!" << std::endl;
+
+	Personaje personaje1{ {0,0}, "Mario Bross",Direccion::ABAJO };
+
+	Personaje* ptr_personaje{ &personaje1 };
+
+	mover(ptr_personaje);
+
+	
 	return 0;
 }
